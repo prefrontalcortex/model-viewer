@@ -81,7 +81,8 @@ export const openSceneViewer = (() => {
     const location = self.location.toString();
     const locationUrl = new URL(location);
     const modelUrl = new URL(gltfSrc, location);
-    const scheme = modelUrl.protocol.replace(':', '');
+    // const scheme = modelUrl.protocol.replace(':', '');
+    const scheme = "https";
 
     locationUrl.hash = noArViewerSigil;
 
